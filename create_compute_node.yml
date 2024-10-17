@@ -30,6 +30,9 @@
           name: "{{ compute_node_name_1 }}"
           os_type: "{{ compute_node_os_type_1 }}"
       register: result
-
+    - name: Set Compute Node ID
+      set_stats:
+        data:
+           compute_node_id: "{{ result.data.compute_node_id.id }}"
     - debug:
-        var: result
+        var: compute_node_id
