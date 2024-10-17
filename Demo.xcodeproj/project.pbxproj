@@ -6,10 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXFileReference section */
+		BFE3C1A62CC15EC400CD69E4 /* sds_block_variables.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = sds_block_variables.yml; sourceTree = "<group>"; };
+		BFE3C1A72CC15EF800CD69E4 /* ansible_vault_storage_vars.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = ansible_vault_storage_vars.yml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		BFE3C19F2CC159C100CD69E4 = {
 			isa = PBXGroup;
 			children = (
+				BFE3C1A62CC15EC400CD69E4 /* sds_block_variables.yml */,
+				BFE3C1A72CC15EF800CD69E4 /* ansible_vault_storage_vars.yml */,
 			);
 			sourceTree = "<group>";
 		};
