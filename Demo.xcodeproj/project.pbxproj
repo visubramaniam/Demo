@@ -9,6 +9,7 @@
 /* Begin PBXFileReference section */
 		BFE3C1A62CC15EC400CD69E4 /* sds_block_variables.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = sds_block_variables.yml; sourceTree = "<group>"; };
 		BFE3C1A72CC15EF800CD69E4 /* ansible_vault_storage_vars.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = ansible_vault_storage_vars.yml; sourceTree = "<group>"; };
+		BFE3C1A82CC15FF100CD69E4 /* create_compute_node.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = create_compute_node.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -17,6 +18,7 @@
 			children = (
 				BFE3C1A62CC15EC400CD69E4 /* sds_block_variables.yml */,
 				BFE3C1A72CC15EF800CD69E4 /* ansible_vault_storage_vars.yml */,
+				BFE3C1A82CC15FF100CD69E4 /* create_compute_node.yml */,
 			);
 			sourceTree = "<group>";
 		};

@@ -1,0 +1,35 @@
+####################################################################
+# Example : Compute Node Playbook
+####################################################################
+- name: Compute Node Module
+  hosts: localhost
+  gather_facts: false
+  collections:
+    - hitachivantara.vspone_block.sds_block
+
+  vars_files:
+    - ../ansible_vault_vars/ansible_vault_storage_var.yml
+    - sds_block_variables.yml
+
+  vars:
+    # Common connection info for all tasks
+    connection_info:
+      address: "{{ storage_address }}"
+      username: "{{ vault_storage_username }}"
+      password: "{{ vault_storage_secret }}"
+
+  tasks:
+####################################################################
+# Task 1 : Create compute node
+####################################################################
+    - name: Create compute node
+      hv_sds_block_compute_node:
+        connection_info: "{{ connection_info }}"
+        state: "{{ state_present }}"
+        spec:
+          name: "{{ compute_node_name_1 }}"
+          os_type: "{{ compute_node_os_type_1 }}"
+      register: result
+
+    - debug:
+        var: result
